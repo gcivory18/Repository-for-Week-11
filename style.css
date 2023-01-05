@@ -1,0 +1,64 @@
+/* background of the webpage */
+body{
+    background-color: white;
+}
+
+/* formats all header 1 */
+h1{
+    color: rgb(206, 11, 245);
+}
+
+/* this formats the cells themselves when filled with X's and )'s */
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    box-sizing: border-box;
+    line-height: 75px;
+    font-size: 75px;
+    cursor: pointer;
+    font-family: "Permanent Marker", cursive;
+}
+
+/* this section formats the title of the game */
+#gameContainer{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+
+/* this section formats the game board iteself creating 3 identitcal columns to make the board */
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    width: 225px;
+    margin: auto;
+    background-color: aqua;
+}
+/* these sections are styling for the reset button */
+button {
+    outline: none;
+    border: 4px solid aqua;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+button:hover {
+    cursor: pointer;
+    background: rgb(206, 11, 245);
+    color: white;
+  }
+
+
+
+/* change this to an alert for the winner or tie */
+/* <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>GAME OVER!!!</strong> Want to play again? Hit restart!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> */
+
