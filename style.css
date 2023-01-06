@@ -1,6 +1,13 @@
 /* background of the webpage */
 body{
-    background-color: white;
+    background-image:
+    linear-gradient(
+      to right, 
+      red, 
+      #f06d06, 
+      rgb(255, 255, 0), 
+      green
+    );
 }
 
 /* formats all header 1 */
@@ -19,6 +26,13 @@ h1{
     font-size: 75px;
     cursor: pointer;
     font-family: "Permanent Marker", cursive;
+    transition: all .25s ease-in-out;
+}
+
+/* NEED TO TEST IF THIS WORKS!!!!!!!!!!!!!!!!!!!!! */
+.cell:hover{
+    background: rgb(206, 11, 245);
+	color: white;
 }
 
 /* this section formats the title of the game */
@@ -35,6 +49,7 @@ h1{
     margin: auto;
     background-color: aqua;
 }
+
 /* these sections are styling for the reset button */
 button {
     outline: none;
@@ -43,7 +58,6 @@ button {
     font-size: 1rem;
     font-weight: bold;
     background: none;
-    transition: all 0.2s ease-in-out;
   }
 
 button:hover {
@@ -54,11 +68,5 @@ button:hover {
 
 
 
-/* change this to an alert for the winner or tie */
-/* <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>GAME OVER!!!</strong> Want to play again? Hit restart!
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div> */
+
 
